@@ -1,0 +1,4 @@
+lazy_load_venv/
+.pytest_cache/
+.idea/
+__pycache__/
