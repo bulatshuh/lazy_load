@@ -4,10 +4,9 @@ import time
 
 
 def test_screenshot():
-    page = BasePage(webdriver.Chrome(), 'https://www.yahoo.com')
+    page = BasePage(webdriver.Chrome(), 'https://stackoverflow.com/questions/20986631/'
+                                        'how-can-i-scroll-a-web-page-using-selenium-webdriver-in-python')
     page.open()
     page.go_full_screen()
-    page.scroll_down_absolute()
     page.take_screenshot()
-    time.sleep(3)
     page.close()

@@ -12,8 +12,8 @@ class BasePage:
         self.browser.implicitly_wait(5)
 
     def take_screenshot(self):
-        element = self.browser.find_element(*BasePageLocators.BODY)
-        element.screenshot('C://users/Bulatshuh/lazy_load/temp/yahoo.png')
+        self.browser.find_element(*BasePageLocators.BODY)\
+            .screenshot('C://users/Bulatshuh/lazy_load/temp/screenshot.png')
 
     def scroll_down_pixels(self, pixels):
         self.browser.execute_script(f'window.scrollBy(0, {pixels});')
